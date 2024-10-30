@@ -50,49 +50,49 @@
   ],
 
   "MACROS": {
-    "tt_um_microtile": {
+    "tt_um_microtile1": {
       "instances": {
         "proj1": {
           "location": [0, 0],
           "orientation": "N"
         }
       },
-      "gds": ["dir::../macros/tt_um_microtile.gds"],
-      "lef": ["dir::../macros/tt_um_microtile.lef"],
-      "nl": ["dir::../macros/tt_um_microtile.v"]
+      "gds": ["dir::../macros/tt_um_microtile1.gds"],
+      "lef": ["dir::../macros/tt_um_microtile1.lef"],
+      "nl": ["dir::../macros/tt_um_microtile1.v"]
     },
-    "tt_um_microtile": {
+    "tt_um_microtile2": {
       "instances": {
         "proj2": {
           "location": [86.6, 0],
           "orientation": "FN"
         }
       },
-      "gds": ["dir::../macros/tt_um_microtile.gds"],
-      "lef": ["dir::../macros/tt_um_microtile.lef"],
-      "nl": ["dir::../macros/tt_um_microtile.v"]
+      "gds": ["dir::../macros/tt_um_microtile2.gds"],
+      "lef": ["dir::../macros/tt_um_microtile2.lef"],
+      "nl": ["dir::../macros/tt_um_microtile2.v"]
     },
-    "tt_um_microtile": {
+    "tt_um_microtile3": {
       "instances": {
         "proj3": {
           "location": [0, 52],
           "orientation": "N"
         }
       },
-      "gds": ["dir::../macros/tt_um_microtile.gds"],
-      "lef": ["dir::../macros/tt_um_microtile.lef"],
-      "nl": ["dir::../macros/tt_um_microtile.v"]
+      "gds": ["dir::../macros/tt_um_microtile3.gds"],
+      "lef": ["dir::../macros/tt_um_microtile3.lef"],
+      "nl": ["dir::../macros/tt_um_microtile3.v"]
     },
-    "tt_um_microtile": {
+    "tt_um_microtile4": {
       "instances": {
         "proj4": {
           "location": [86.6, 52],
           "orientation": "FN"
         }
       },
-      "gds": ["dir::../macros/tt_um_microtile.gds"],
-      "lef": ["dir::../macros/tt_um_microtile.lef"],
-      "nl": ["dir::../macros/tt_um_microtile.v"]
+      "gds": ["dir::../macros/tt_um_microtile4.gds"],
+      "lef": ["dir::../macros/tt_um_microtile4.lef"],
+      "nl": ["dir::../macros/tt_um_microtile4.v"]
     }
   },
 
