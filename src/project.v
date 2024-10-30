@@ -21,32 +21,32 @@ module tt_um_micro_tiles_container (
   tt_um_microtile1 proj1 (
       .rst_n(sel == 0 ? rst_n : 1'b0),
       .clk(sel == 0 ? clk : 1'b0),
-      .ui_in(sel == 0 ? ui_in : 8'h00),
+      .ui_in(sel == 0 ? {7'h00,ui_in[0]} : 8'h00),
       .uo_out(uo_out_proj[0])
   );
 
   tt_um_microtile2 proj2 (
       .rst_n(sel == 0 ? rst_n : 1'b0),
       .clk(sel == 0 ? clk : 1'b0),
-      .ui_in(sel == 0 ? ui_in : 8'h00),
+      .ui_in(sel == 0 ? {7'h00,ui_in[0]} : 8'h00),
       .uo_out(uo_out_proj[1])
   );
 
   tt_um_microtile3 proj3 (
       .rst_n(sel == 0 ? rst_n : 1'b0),
       .clk(sel == 0 ? clk : 1'b0),
-      .ui_in(sel == 0 ? ui_in : 8'h00),
+      .ui_in(sel == 0 ? {7'h00,ui_in[0]} : 8'h00),
       .uo_out(uo_out_proj[2])
   );
 
   tt_um_microtile4 proj4 (
       .rst_n(sel == 0 ? rst_n : 1'b0),
       .clk(sel == 0 ? clk : 1'b0),
-      .ui_in(sel == 0 ? ui_in : 8'h00),
+      .ui_in(sel == 0 ? {7'h00,ui_in[0]} : 8'h00),
       .uo_out(uo_out_proj[3])
   );
 
   // List all unused inputs to prevent warnings
-  wire _unused = &{ena, uio_in[7:2], 1'b0};
+  wire _unused = &{ena, ui_in[7:1], uio_in[7:2], 1'b0};
 
 endmodule
