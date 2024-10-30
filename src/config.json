@@ -64,7 +64,7 @@
   },
 
   "PDN_MACRO_CONNECTIONS": [
-    "proj1 VPWR VGND VPWR VGND",
+    "proj1 VPWR VGND VPWR VGND"
   ],
 
   "//": "Configuration docs: https://openlane.readthedocs.io/en/latest/reference/configuration.html",
