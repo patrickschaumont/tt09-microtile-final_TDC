@@ -60,7 +60,7 @@
       "gds": ["dir::../macros/tt_um_microtile.gds"],
       "lef": ["dir::../macros/tt_um_microtile.lef"],
       "nl": ["dir::../macros/tt_um_microtile.v"]
-    },
+    }
   },
 
   "PDN_MACRO_CONNECTIONS": [
