@@ -18,9 +18,9 @@ module tt_um_micro_tiles_container (
   assign uio_oe  = 0;
 
   tt_um_microtile proj1 (
-      .rst_n(sel == 0 ? rst_n : 1'b0),
-      .clk(sel == 0 ? clk : 1'b0),
-      .ui_in(sel == 0 ? ui_in : 8'h00),
+      .rst_n(rst_n),
+      .clk(clk),
+      .ui_in(ui_in),
       .uo_out(uo_out_proj)
   );
 
