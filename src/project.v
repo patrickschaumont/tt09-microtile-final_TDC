@@ -18,28 +18,28 @@ module tt_um_micro_tiles_container (
   assign uio_out = 0;
   assign uio_oe  = 0;
 
-  tt_um_microtile proj1 (
+  tt_um_microtile1 proj1 (
       .rst_n(sel == 0 ? rst_n : 1'b0),
       .clk(sel == 0 ? clk : 1'b0),
       .ui_in(sel == 0 ? ui_in : 8'h00),
       .uo_out(uo_out_proj[0])
   );
 
-  tt_um_microtile proj2 (
+  tt_um_microtile2 proj2 (
       .rst_n(sel == 0 ? rst_n : 1'b0),
       .clk(sel == 0 ? clk : 1'b0),
       .ui_in(sel == 0 ? ui_in : 8'h00),
       .uo_out(uo_out_proj[1])
   );
 
-  tt_um_microtile proj3 (
+  tt_um_microtile3 proj3 (
       .rst_n(sel == 0 ? rst_n : 1'b0),
       .clk(sel == 0 ? clk : 1'b0),
       .ui_in(sel == 0 ? ui_in : 8'h00),
       .uo_out(uo_out_proj[2])
   );
 
-  tt_um_microtile proj4 (
+  tt_um_microtile4 proj4 (
       .rst_n(sel == 0 ? rst_n : 1'b0),
       .clk(sel == 0 ? clk : 1'b0),
       .ui_in(sel == 0 ? ui_in : 8'h00),
