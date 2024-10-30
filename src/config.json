@@ -50,7 +50,7 @@
   ],
 
   "MACROS": {
-    "tt_um_tile1": {
+    "tt_um_microtile": {
       "instances": {
         "proj1": {
           "location": [0, 0],
@@ -61,7 +61,7 @@
       "lef": ["dir::../macros/tt_um_microtile.lef"],
       "nl": ["dir::../macros/tt_um_microtile.v"]
     },
-    "tt_um_tile2": {
+    "tt_um_microtile": {
       "instances": {
         "proj2": {
           "location": [86.6, 0],
@@ -72,7 +72,7 @@
       "lef": ["dir::../macros/tt_um_microtile.lef"],
       "nl": ["dir::../macros/tt_um_microtile.v"]
     },
-    "tt_um_tile3": {
+    "tt_um_microtile": {
       "instances": {
         "proj3": {
           "location": [0, 52],
@@ -83,7 +83,7 @@
       "lef": ["dir::../macros/tt_um_microtile.lef"],
       "nl": ["dir::../macros/tt_um_microtile.v"]
     },
-    "tt_um_tile4": {
+    "tt_um_microtile": {
       "instances": {
         "proj4": {
           "location": [86.6, 52],
