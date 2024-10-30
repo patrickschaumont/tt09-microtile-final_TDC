@@ -60,11 +60,47 @@
       "gds": ["dir::../macros/tt_um_microtile.gds"],
       "lef": ["dir::../macros/tt_um_microtile.lef"],
       "nl": ["dir::../macros/tt_um_microtile.v"]
+    },
+    "tt_um_microtile": {
+      "instances": {
+        "proj2": {
+          "location": [86.6, 0],
+          "orientation": "FN"
+        }
+      },
+      "gds": ["dir::../macros/tt_um_microtile.gds"],
+      "lef": ["dir::../macros/tt_um_microtile.lef"],
+      "nl": ["dir::../macros/tt_um_microtile.v"]
+    },
+    "tt_um_microtile": {
+      "instances": {
+        "proj3": {
+          "location": [0, 52],
+          "orientation": "N"
+        }
+      },
+      "gds": ["dir::../macros/tt_um_microtile.gds"],
+      "lef": ["dir::../macros/tt_um_microtile.lef"],
+      "nl": ["dir::../macros/tt_um_microtile.v"]
+    },
+    "tt_um_microtile": {
+      "instances": {
+        "proj4": {
+          "location": [86.6, 52],
+          "orientation": "FN"
+        }
+      },
+      "gds": ["dir::../macros/tt_um_microtile.gds"],
+      "lef": ["dir::../macros/tt_um_microtile.lef"],
+      "nl": ["dir::../macros/tt_um_microtile.v"]
     }
   },
 
   "PDN_MACRO_CONNECTIONS": [
-    "proj1 VPWR VGND VPWR VGND"
+    "proj1 VPWR VGND VPWR VGND",
+    "proj2 VPWR VGND VPWR VGND",
+    "proj3 VPWR VGND VPWR VGND",
+    "proj4 VPWR VGND VPWR VGND"
   ],
 
   "//": "Configuration docs: https://openlane.readthedocs.io/en/latest/reference/configuration.html",
