@@ -1,4 +1,4 @@
-module tt_um_roy1707018_tdc (clk,
+module tt_um_roy1707018_sensor (clk,
     ena,
     rst_n,
     VPWR,

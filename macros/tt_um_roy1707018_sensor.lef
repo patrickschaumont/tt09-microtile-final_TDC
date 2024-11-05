@@ -2,9 +2,9 @@ VERSION 5.7 ;
   NOWIREEXTENSIONATPIN ON ;
   DIVIDERCHAR "/" ;
   BUSBITCHARS "[]" ;
-MACRO tt_um_roy1707018_tdc
+MACRO tt_um_roy1707018_sensor
   CLASS BLOCK ;
-  FOREIGN tt_um_roy1707018_tdc ;
+  FOREIGN tt_um_roy1707018_sensor ;
   ORIGIN 0.000 0.000 ;
   SIZE 161.000 BY 111.520 ;
   PIN VGND
@@ -548,6 +548,6 @@ MACRO tt_um_roy1707018_tdc
         RECT 133.000 102.855 138.600 106.720 ;
         RECT 141.000 102.855 144.145 106.720 ;
   END
-END tt_um_roy1707018_tdc
+END tt_um_roy1707018_sensor
 END LIBRARY
 
