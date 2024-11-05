@@ -50,49 +50,49 @@
   ],
 
   "MACROS": {
-    "tt_um_microtile1": {
+    "tt_um_roy1707018_sensor": {
       "instances": {
         "proj1": {
           "location": [0, 0],
           "orientation": "N"
         }
       },
-      "gds": ["dir::../macros/tt_um_microtile1.gds"],
-      "lef": ["dir::../macros/tt_um_microtile1.lef"],
-      "nl": ["dir::../macros/tt_um_microtile1.v"]
+      "gds": ["dir::../macros/tt_um_roy1707018_sensor.gds"],
+      "lef": ["dir::../macros/tt_um_roy1707018_sensor.lef"],
+      "nl": ["dir::../macros/tt_um_roy1707018_sensor.v"]
     },
-    "tt_um_microtile2": {
+    "tt_um_roy1707018_tdc": {
       "instances": {
         "proj2": {
           "location": [86.6, 0],
           "orientation": "FN"
         }
       },
-      "gds": ["dir::../macros/tt_um_microtile2.gds"],
-      "lef": ["dir::../macros/tt_um_microtile2.lef"],
-      "nl": ["dir::../macros/tt_um_microtile2.v"]
+      "gds": ["dir::../macros/tt_um_roy1707018_tdc.gds"],
+      "lef": ["dir::../macros/tt_um_roy1707018_tdc.lef"],
+      "nl": ["dir::../macros/tt_um_roy1707018_tdc.v"]
     },
-    "tt_um_microtile3": {
+    "tt_um_roy1707018_ro": {
       "instances": {
         "proj3": {
           "location": [0, 52],
           "orientation": "N"
         }
       },
-      "gds": ["dir::../macros/tt_um_microtile3.gds"],
-      "lef": ["dir::../macros/tt_um_microtile3.lef"],
-      "nl": ["dir::../macros/tt_um_microtile3.v"]
+      "gds": ["dir::../macros/tt_um_roy1707018_ro.gds"],
+      "lef": ["dir::../macros/tt_um_roy1707018_ro.lef"],
+      "nl": ["dir::../macros/tt_um_roy1707018_ro.v"]
     },
-    "tt_um_microtile4": {
+    "tt_um_roy1707018_ro2": {
       "instances": {
         "proj4": {
           "location": [86.6, 52],
           "orientation": "FN"
         }
       },
-      "gds": ["dir::../macros/tt_um_microtile4.gds"],
-      "lef": ["dir::../macros/tt_um_microtile4.lef"],
-      "nl": ["dir::../macros/tt_um_microtile4.v"]
+      "gds": ["dir::../macros/tt_um_roy1707018_ro2.gds"],
+      "lef": ["dir::../macros/tt_um_roy1707018_ro2.lef"],
+      "nl": ["dir::../macros/tt_um_roy1707018_ro2.v"]
     }
   },
 

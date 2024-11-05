@@ -13,40 +13,56 @@ module tt_um_micro_tiles_container (
 
   wire [1:0] sel = uio_in[1:0];
   wire [7:0] uo_out_proj[3:0];
-
+ 
   assign uo_out  = uo_out_proj[sel];
   assign uio_out = 0;
   assign uio_oe  = 0;
 
   tt_um_microtile1 proj1 (
       .rst_n(sel == 0 ? rst_n : 1'b0),
-      .clk(sel == 0 ? clk : 1'b0),
-      .ui_in(sel == 0 ? {7'h00,ui_in[0]} : 8'h00),
-      .uo_out(uo_out_proj[0])
+      .clk(clk),
+      .ui_in(ui_in),
+      .uo_out(uo_out_proj[1]),
+      .ena(ena),
+      .uio_in(uio_in),
+      .uio_out(uio_out),
+      .uio_oe(uio_oe)
   );
 
   tt_um_microtile2 proj2 (
       .rst_n(sel == 0 ? rst_n : 1'b0),
-      .clk(sel == 0 ? clk : 1'b0),
-      .ui_in(sel == 0 ? {7'h00,ui_in[0]} : 8'h00),
-      .uo_out(uo_out_proj[1])
+      .clk(clk),
+      .ui_in({6'h00, uo_out_proj[0][1:0]}),
+      .uo_out(uo_out_proj[1]),
+      .ena(ena),
+      .uio_in(uio_in),
+      .uio_out(uio_out),
+      .uio_oe(uio_oe)
   );
 
   tt_um_microtile3 proj3 (
-      .rst_n(sel == 0 ? rst_n : 1'b0),
-      .clk(sel == 0 ? clk : 1'b0),
-      .ui_in(sel == 0 ? {7'h00,ui_in[0]} : 8'h00),
-      .uo_out(uo_out_proj[2])
+      .rst_n(sel == 2 ? rst_n : 1'b0),
+      .clk(sel == 2 ? clk : 1'b0),
+      .ui_in(sel == 2 ? {6'b0, ui_in[3:2]} : 8'b0),
+      .uo_out(uo_out_proj[1]),
+      .ena(ena),
+      .uio_in(uio_in),
+      .uio_out(uio_out),
+      .uio_oe(uio_oe) 
   );
 
   tt_um_microtile4 proj4 (
-      .rst_n(sel == 0 ? rst_n : 1'b0),
-      .clk(sel == 0 ? clk : 1'b0),
-      .ui_in(sel == 0 ? {7'h00,ui_in[0]} : 8'h00),
-      .uo_out(uo_out_proj[3])
+      .rst_n(sel == 3 ? rst_n : 1'b0),
+      .clk(sel == 3 ? clk : 1'b0),
+      .ui_in(sel == 3 ? {6'b0, ui_in[5:4]} : 8'b0),
+      .uo_out(uo_out_proj[1]),
+      .ena(ena),
+      .uio_in(uio_in),
+      .uio_out(uio_out),
+      .uio_oe(uio_oe)
   );
 
   // List all unused inputs to prevent warnings
-  wire _unused = &{ena, ui_in[7:1], uio_in[7:2], 1'b0};
+  wire _unused = &{ena,uio_in[7:2], 1'b0};
 
 endmodule

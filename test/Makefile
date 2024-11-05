@@ -7,13 +7,13 @@ TOPLEVEL_LANG ?= verilog
 SRC_DIR = $(PWD)/../src
 MACROS_DIR = $(PWD)/../macros
 PROJECT_SOURCES = project.v
-MACRO_SOURCES = tt_um_micro_test.v tt_um_MichaelBell_shift_compute.v tt_um_micro_gfg_development_cic.v tt_um_watbulb_sync_fifo.v
+MACRO_SOURCES = tt_um_roy1707018_ro.v tt_um_roy1707018_ro2.v tt_um_roy1707018_tdc.v tt_um_roy1707018_sensor.v
 
 ifneq ($(GATES),yes)
 
 # RTL simulation:
 SIM_BUILD				= sim_build/rtl
-VERILOG_SOURCES += $(addprefix $(SRC_DIR)/,$(PROJECT_SOURCES)) $(addprefix $(MACROS_DIR)/rtl/,$(MACRO_SOURCES))
+VERILOG_SOURCES += $(addprefix $(SRC_DIR)/,$(PROJECT_SOURCES))
 COMPILE_ARGS 		+= -I$(SRC_DIR)
 
 else
