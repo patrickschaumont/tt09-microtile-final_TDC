@@ -18,7 +18,7 @@ module tt_um_micro_tiles_container (
   assign uio_out = 0;
   assign uio_oe  = 0;
 
-  tt_um_microtile1 proj1 (
+  tt_um_roy1707018_sensor proj1 (
       .rst_n(sel == 0 ? rst_n : 1'b0),
       .clk(clk),
       .ui_in(ui_in),
@@ -29,7 +29,7 @@ module tt_um_micro_tiles_container (
       .uio_oe(uio_oe)
   );
 
-  tt_um_microtile2 proj2 (
+  tt_um_roy1707018_tdc proj2 (
       .rst_n(sel == 0 ? rst_n : 1'b0),
       .clk(clk),
       .ui_in({6'h00, uo_out_proj[0][1:0]}),
@@ -40,7 +40,7 @@ module tt_um_micro_tiles_container (
       .uio_oe(uio_oe)
   );
 
-  tt_um_microtile3 proj3 (
+  tt_um_roy1707018_ro proj3 (
       .rst_n(sel == 2 ? rst_n : 1'b0),
       .clk(sel == 2 ? clk : 1'b0),
       .ui_in(sel == 2 ? {6'b0, ui_in[3:2]} : 8'b0),
@@ -51,7 +51,7 @@ module tt_um_micro_tiles_container (
       .uio_oe(uio_oe) 
   );
 
-  tt_um_microtile4 proj4 (
+  tt_um_roy1707018_ro2 proj4 (
       .rst_n(sel == 3 ? rst_n : 1'b0),
       .clk(sel == 3 ? clk : 1'b0),
       .ui_in(sel == 3 ? {6'b0, ui_in[5:4]} : 8'b0),
