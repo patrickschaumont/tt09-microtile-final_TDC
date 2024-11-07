@@ -17,7 +17,7 @@ module tt_um_micro_tiles_container  (
     input  wire       rst_n     // reset_n - low to reset
 );
 
- // wire [1:0] sel = uio_in[1:0];
+  wire [1:0] sel = uio_in[1:0];
   wire [7:0] uo_out_proj[3:0];
  
   assign uo_out  = uo_out_proj[sel];
