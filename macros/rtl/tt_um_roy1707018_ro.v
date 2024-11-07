@@ -1,12 +1,6 @@
 `default_nettype none
 
 module tt_um_roy1707018_ro (
-
-	      // Include power ports for the Gate Level test:
-`ifdef GL_TEST
-      .VPWR(vpwr),
-      .VGND(vgnd),
-`endif
     input  wire [7:0] ui_in,    // Dedicated inputs (we'll use ui_in[1:0] for mux control)
     output wire [7:0] uo_out,   // Dedicated outputs (8-bit output of time count)
    // input  wire [7:0] uio_in,   // IOs: Input path
