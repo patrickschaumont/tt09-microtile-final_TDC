@@ -41,7 +41,7 @@ module tt_um_micro_tiles_container (
     assign uio_oe  = 8'b0;
 
     // List all unused inputs to prevent warnings
-    wire _unused = &{ena, uio_in, 1'b0};
+    wire _unused = &{ena, uio_in[7:2], 1'b0};
 
     // Instantiate the sensor module
     tt_um_roy1707018_sensor proj1 (
