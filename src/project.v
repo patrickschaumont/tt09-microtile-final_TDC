@@ -22,14 +22,18 @@ module tt_um_micro_tiles_container (
     // Output signals from each module
     // Outputs from the sensor module
     wire [7:0] sensor_out;
-    wire sensor_delayed_clk_o = sensor_out[1];
-    wire sensor_start_o       = sensor_out[0];
+    wire sensor_delayed_clk_o;
+    wire sensor_start_o;
+    wire tdc_mux_sel_i
     wire [7:0] tdc_out;
     wire [7:0] ro_out;
     wire [7:0] ro2_out;
 
     // System input selection signal for the TDC
-    wire tdc_mux_sel_i = ui_in[0];
+    assign tdc_mux_sel_i = ui_in[0];
+    // Assign specific bits of sensor_out to named signals
+    assign sensor_delayed_clk_o = sensor_out[1];
+    assign sensor_start_o       = sensor_out[0];
 
     // Top-level output selection based on the `sel` signal
     assign uo_out  = (sel == 2'b00) ? sensor_out :
