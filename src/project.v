@@ -24,7 +24,7 @@ module tt_um_micro_tiles_container (
     wire [7:0] sensor_out;
     wire sensor_delayed_clk_o;
     wire sensor_start_o;
-    wire tdc_mux_sel_i
+    wire tdc_mux_sel_i;
     wire [7:0] tdc_out;
     wire [7:0] ro_out;
     wire [7:0] ro2_out;
