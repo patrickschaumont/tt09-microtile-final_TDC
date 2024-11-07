@@ -64,7 +64,7 @@
     "tt_um_roy1707018_tdc": {
       "instances": {
         "proj2": {
-          "location": [86.6, 0],
+          "location": [86.7, 0],
           "orientation": "FN"
         }
       },
@@ -86,7 +86,7 @@
     "tt_um_roy1707018_ro2": {
       "instances": {
         "proj4": {
-          "location": [86.6, 52],
+          "location": [86.7, 52],
           "orientation": "FN"
         }
       },
