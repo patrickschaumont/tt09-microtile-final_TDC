@@ -68,7 +68,7 @@ module tt_um_micro_tiles_container (
         .rst_n(rst_n),
         .clk(clk),
         .ui_in({6'b0, ui_in[2:1]}),     // Relevant inputs from ui_in
-        .uo_out(8'b0)
+        .uo_out(ro_out)
     );
 
     // Instantiate the second Ring Oscillator module
@@ -76,7 +76,7 @@ module tt_um_micro_tiles_container (
         .rst_n(rst_n),
         .clk(clk),
         .ui_in({6'b0, ui_in[4:3]}),     // Relevant inputs from ui_in
-        .uo_out(8'b0)
+        .uo_out(ro2_out)
     );
 
 endmodule
