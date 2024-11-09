@@ -65,18 +65,18 @@ module tt_um_micro_tiles_TDC (
 
     // Instantiate the first Ring Oscillator module
     tt_um_roy1707018_ro proj3 (
-        .rst_n(!rst_n),
+        .rst_n(rst_n),
         .clk(clk),
         .ui_in({6'b0, ui_in[2:1]}),     // Relevant inputs from ui_in
-        .uo_out(tdc_out)
+        .uo_out(ro_out)
     );
 
     // Instantiate the second Ring Oscillator module
     tt_um_roy1707018_ro2 proj4 (
-        .rst_n(!rst_n),
+        .rst_n(rst_n),
         .clk(clk),
         .ui_in({6'b0, ui_in[4:3]}),     // Relevant inputs from ui_in
-        .uo_out(tdc_out)
+        .uo_out(ro2_out)
     );
 
 endmodule
