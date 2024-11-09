@@ -1,6 +1,6 @@
 `default_nettype none
 
-module tt_um_micro_tiles_TDC (
+module tt_um_roy1707018_micro_tiles_PDN (
     // Include power ports for the Gate Level test:
     `ifdef GL_TEST
         input wire VPWR,
