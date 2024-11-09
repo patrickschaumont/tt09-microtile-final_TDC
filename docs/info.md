@@ -9,7 +9,7 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Combined 4 micro tile sized projects into a single Tiny Tapeout tile.
+Combined 4 micro tile of  sized projects into a single Tiny Tapeout tile.
 
 ### Selecting the active project
 
